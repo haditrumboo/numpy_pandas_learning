@@ -22,5 +22,7 @@ df = pd.read_csv("files/sales.csv")
 # print(df[df.isnull().any(axis=1)])
 df["salesperson"] = df["salesperson"].fillna("adil")
 df["salesperson"] =df["salesperson"].str.upper()
-print(df)
+print(df["city"].value_counts())
+
+# print(df)
 
